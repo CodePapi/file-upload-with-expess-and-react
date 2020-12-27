@@ -7,9 +7,9 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon server",
-    "client": "yarn start prefix --client",
+    "client": "cd client && yarn run start",
     "server": "nodemon server",
-    "dev": "concurrently\"yarn run server\"\"yarn run client\""
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "dependencies": {
     "body-parser": "^1.19.0",
