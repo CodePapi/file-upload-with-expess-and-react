@@ -37,6 +37,12 @@ export const FileUpload = () => {
                 </div>
                 <input type="submit" value="Upload" className="btn btn-primary btn-block mt-4"/>
             </form>
+            {uploadeFile ? <div className={"row mt-2"}>
+                <div className="col-md m-auto">
+                    <h3 className={"text-center"}>{uploadeFile.fileName}</h3>
+                    <img style={{width:"100%"}} src={uploadeFile.filePath} alt={uploadeFile.filePath}/>
+                </div>
+            </div>:null}
         </Fragment>
     )
 }
