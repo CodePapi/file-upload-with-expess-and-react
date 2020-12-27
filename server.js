@@ -20,5 +20,5 @@ app.get("/upload", (req,res)=>{
 })
 
 app.listen("2000", (err)=>{
-    !err&&console.log("running in port 20000")
+    !err&&console.log("running in port 2000")
 })
